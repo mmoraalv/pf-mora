@@ -1,87 +1,87 @@
 .mobile-nav-toggle {
-    color: #2c4964;
-    font-size: 28px;
-    cursor: pointer;
+  color: #2c4964;
+  font-size: 28px;
+  cursor: pointer;
+  display: none;
+  line-height: 0;
+  transition: 0.5s;
+
+  &.bi-x {
+    color: $color-ft-two;
+  }
+}
+
+@media (max-width: 991px) {
+  .mobile-nav-toggle {
+    display: block;
+  }
+
+  .navbar ul {
     display: none;
-    line-height: 0;
-    transition: 0.5s;
-  
-    &.bi-x {
-      color: #fff;
-    }
   }
-  
-  @media (max-width: 991px) {
-    .mobile-nav-toggle {
-      display: block;
-    }
-  
-    .navbar ul {
-      display: none;
-    }
+}
+
+.navbar-mobile {
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(28, 47, 65, 0.9);
+  transition: 0.3s;
+  z-index: 999;
+
+  .mobile-nav-toggle {
+    position: absolute;
+    top: 15px;
+    right: 15px;
   }
-  
-  .navbar-mobile {
-    position: fixed;
-    overflow: hidden;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    background: rgba(28, 47, 65, 0.9);
+
+  ul {
+    display: block;
+    position: absolute;
+    top: 55px;
+    right: 15px;
+    bottom: 15px;
+    left: 15px;
+    padding: 10px 0;
+    background-color: $color-bg-five;
+    overflow-y: auto;
     transition: 0.3s;
-    z-index: 999;
-  
-    .mobile-nav-toggle {
-      position: absolute;
-      top: 15px;
-      right: 15px;
-    }
-  
-    ul {
-      display: block;
-      position: absolute;
-      top: 55px;
-      right: 15px;
-      bottom: 15px;
-      left: 15px;
-      padding: 10px 0;
-      background-color: #fff;
-      overflow-y: auto;
-      transition: 0.3s;
-    }
-  
-    > ul > li {
-      padding: 0;
-    }
-  
-    a {
+  }
+
+  > ul > li {
+    padding: 0;
+  }
+
+  a {
+    padding: 10px 20px;
+    font-size: 15px;
+    color: #2c4964;
+    border: none;
+
+    &:focus {
       padding: 10px 20px;
       font-size: 15px;
       color: #2c4964;
       border: none;
-  
-      &:focus {
-        padding: 10px 20px;
-        font-size: 15px;
-        color: #2c4964;
-        border: none;
-      }
-  
-      &:hover {
-        color: #1977cc;
-      }
     }
-  
-    .active, li:hover > a {
+
+    &:hover {
       color: #1977cc;
     }
-  
-    .getstarted {
+  }
+
+  .active, li:hover > a {
+    color: $color-ft-two;
+  }
+
+  .getstarted {
+    margin: 15px;
+
+    &:focus {
       margin: 15px;
-  
-      &:focus {
-        margin: 15px;
-      }
     }
   }
+}

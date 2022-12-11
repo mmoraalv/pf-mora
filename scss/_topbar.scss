@@ -1,0 +1,40 @@
+#topbar {
+	background: $color-bg-two;
+	height: 40px;
+	font-size: 14px;
+	transition: all 0.5s;
+	z-index: 996;
+	&.topbar-scrolled {
+		top: -40px;
+	}
+	.contact-info a {
+		line-height: 1;
+		color: $color-ft-five;
+		transition: 0.3s;
+		&:hover {
+			color: $color-ft-one;
+		}
+	}
+	.contact-info i {
+		color: $color-bt-two;
+		padding-right: 4px;
+		margin-left: 15px;
+		line-height: 0;
+		&:first-child {
+			margin-left: 0;
+		}
+	}
+	.social-links a {
+		color: $color-ft-five;
+		padding-left: 15px;
+		display: inline-block;
+		line-height: 1px;
+		transition: 0.3s;
+		&:hover {
+			color: $color-bt-one;
+		}
+		&:first-child {
+			border-left: 0;
+		}
+	}
+}
