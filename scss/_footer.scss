@@ -85,7 +85,7 @@
   .social-links a {
     font-size: 18px;
     display: inline-block;
-    background: $color-bt-two;
+    background: $color-bg-two;
     color: #fff;
     line-height: 1;
     padding: 8px 0;
@@ -97,7 +97,7 @@
     transition: 0.3s;
 
     &:hover {
-      background: $color-bt-one;
+      background: $color-bg-one;
       color: #fff;
       text-decoration: none;
     }

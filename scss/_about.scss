@@ -14,7 +14,7 @@
     margin: 0 auto;
     width: 64px;
     height: 64px;
-    background: #1977cc;
+    background: $color-bg-six;
     border-radius: 5px;
     transition: all 0.3s ease-out 0s;
     display: flex;
@@ -35,7 +35,7 @@
       top: -8px;
       height: 100%;
       width: 100%;
-      background: #badaf7;
+      background: bisque;
       border-radius: 5px;
       transition: all 0.3s ease-out 0s;
       transform: translateZ(-1px);
@@ -59,23 +59,23 @@
   }
 
   &:hover {
-    background: $color-bg-two;
-    border-color: #1977cc;
+    background: bisque;
+    border-color: $color-bt-six;
 
     .icon {
-      background: $color-bg-two;
+      background: $color-ft-two;
 
       i {
-        color: #1977cc;
+        color: #fff;
       }
 
       &::before {
-        background: $color-bg-three;
+        background: $color-ft-seven;
       }
     }
 
     h4 a, p {
-      color: #fff;
+      color: $color-ft-seven;
     }
   }
 }

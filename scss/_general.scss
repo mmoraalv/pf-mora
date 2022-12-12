@@ -1,18 +1,23 @@
 body {
-    font-family: "Open Sans", sans-serif;
-    color: #444444;
-  }
-  
-  a {
-    color: #1977cc;
+  font-family: "Open Sans", sans-serif;
+  color: #444444;
+}
+
+a {
+  color: $color-ft-two;
+  text-decoration: none;
+
+  &:hover {
+    color: $color-ft-six;
     text-decoration: none;
-  
-    &:hover {
-      color: #3291e6;
-      text-decoration: none;
-    }
   }
-  
-  h1, h2, h3, h4, h5, h6 {
-    font-family: 'Raleway', sans-serif;
-  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Raleway', sans-serif;
+}
+
+.carousel-inner {
+  max-height: 35rem;
+  margin-top: 15px;
+}

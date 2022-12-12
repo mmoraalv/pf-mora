@@ -16,12 +16,12 @@
     font-size: 15px;
 
     &:hover {
-      color: #1977cc;
+      color: $color-ft-two;
     }
 
     &.active {
-      color: #1977cc;
-      border-color: #1977cc;
+      color: $color-ft-six;
+      border-color: $color-ft-six;
     }
   }
 

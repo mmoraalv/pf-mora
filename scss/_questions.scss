@@ -34,7 +34,7 @@
     position: absolute;
     right: 0;
     left: 20px;
-    color: #76b5ee;
+    color: $color-bt-six;
   }
 
   .icon-show, .icon-close {
@@ -57,7 +57,7 @@
     color: #343a40;
 
     &:hover {
-      color: #1977cc;
+      color: $color-ft-two;
     }
 
     .icon-show {

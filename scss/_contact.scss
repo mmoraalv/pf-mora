@@ -5,7 +5,7 @@
 
     i {
       font-size: 20px;
-      color: yellow;
+      color: $color-bt-six;
       float: left;
       width: 44px;
       height: 44px;
@@ -37,7 +37,7 @@
     }
 
     .email:hover i, .address:hover i, .phone:hover i {
-      background: #1977cc;
+      background: $color-bt-six;
       color: #fff;
     }
   }
@@ -115,7 +115,7 @@
       border-radius: 50px;
 
       &:hover {
-        background: #1c84e3;
+        background: $color-bg-six;
       }
     }
   }
